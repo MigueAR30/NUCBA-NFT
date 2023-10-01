@@ -1,0 +1,97 @@
+/* Fonts */
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto&display=swap");
+
+/* TODO:
+ELIMINAR EL BACKGROUND */
+
+:root {
+  /* bg-colors */
+  --backgrounds: #02050e;
+  --primary: #1e50ff;
+  --secondary: #292d37;
+  --bnt-bg: #050d26;
+  --bg-azul-10: #e9eeff;
+  --bg-white: #fff;
+  --bg-electric: #f0fbff;
+  --nav-bg: #0f1525;
+
+  /* text-colors */
+  --text-gray: #adb8c7;
+  --text-white: #f3f4f6;
+
+  /* decoration */
+  --fire: #ff6d00;
+  --electric: #64d3ff;
+
+  /* fonts */
+  --font-poppins: "Poppins";
+  --font-sm: 14px;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-semibold: 600;
+  --font-bold: 700;
+  --font-black: 800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: var(--font-poppins), sans-serif;
+}
+
+body {
+  background: var(--backgrounds);
+}
+
+/* Header */
+
+.header {
+  background: var(--secondary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  position: fixed;
+  width: 100%;
+  height: 65px;
+}
+
+.navbar,
+.navbar-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  gap: 5rem;
+}
+
+.navbar-list {
+  gap: 30px;
+  color: var(--text-white);
+}
+.navbar-list a {
+  color: var(--text-gray);
+  font-size: var(--font-sm);
+}
+
+.cart-icon {
+  height: 20px;
+  cursor: pointer;
+}
+
+.logo {
+  height: 40%;
+}
+/* TODO: PSEUDOCLASE */
+.font a {
+  font-weight: var(--font-semibold);
+  color: var(--text-white);
+}
