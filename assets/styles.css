@@ -4,9 +4,6 @@ font-family: 'Roboto', sans-serif; */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto&display=swap");
 
-/* TODO:
-ELIMINAR EL BACKGROUND */
-
 :root {
   /* bg-colors */
   --backgrounds: #02050e;
@@ -28,12 +25,14 @@ ELIMINAR EL BACKGROUND */
 
   /* fonts */
   --font-poppins: "Poppins";
-  --font-sm: 14px;
   --font-light: 300;
   --font-regular: 400;
   --font-semibold: 600;
   --font-bold: 700;
   --font-black: 800;
+
+  --font-sm: 14px;
+  --font-xl: 48px;
 }
 
 * {
@@ -44,9 +43,12 @@ ELIMINAR EL BACKGROUND */
   text-decoration: none;
   font-family: var(--font-poppins), sans-serif;
 }
-
+/* TODO:
+ELIMINAR EL BACKGROUND
+COLOR DE LOS TEXTOS EN EL BODY */
 body {
   background: var(--backgrounds);
+  color: var(--text-white);
 }
 
 /* Header */
@@ -94,4 +96,128 @@ body {
 .font a {
   font-weight: var(--font-semibold);
   color: var(--text-white);
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* HERO */
+#hero {
+  margin-top: 65px;
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TODO: ELIMINAR BACKGROUND */
+.hero-info {
+  /* background-color: green; */
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+}
+
+.hero-info-h1 {
+  font-size: var(--font-xl);
+  font-weight: var(--font-black);
+  color: var(--text-white);
+  min-width: 500px;
+  width: 80%;
+}
+
+.hero-info p {
+  font-size: var(--font-sm);
+  width: 70%;
+  color: var(--text-gray);
+}
+
+.hero-info p > span {
+  font-weight: var(--font-black);
+}
+
+.btn {
+  font-size: var(--font-sm);
+  color: var(--text-white);
+  background-color: var(--primary);
+  display: flex;
+  padding: 8px 20px;
+  border-radius: 8px;
+}
+
+.hero-card {
+  background: var(--secondary);
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px;
+  gap: 20px;
+}
+
+.hero-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hero-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.hero-card-top h3 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: var(--font-semibold);
+}
+
+.hero-card-top span {
+  padding: 3px 20px;
+  background: var(--primary);
+  border-radius: 8px;
+}
+
+.hero-card-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero-card-creator {
+  display: flex;
+  gap: 10px;
+}
+
+.hero-card-creator img {
+  width: 40px;
+}
+
+.hero-card-creator span,
+.hero-card-price p {
+  color: var(--text-gray);
+  font-size: var(--font-sm);
+  font-weight: var(--font-light);
+}
+
+.creator-info p,
+.hero-card-price span {
+  font-size: var(--font-sm);
+}
+
+.hero-card-price span {
+  font-weight: var(--font-bold);
 }
