@@ -32,6 +32,8 @@ font-family: 'Roboto', sans-serif; */
   --font-black: 800;
 
   --font-sm: 14px;
+  --font-sd: 18px;
+  --font-md: 32px;
   --font-xl: 48px;
 }
 
@@ -51,7 +53,7 @@ body {
   color: var(--text-white);
 }
 
-/* Header */
+/* //////////////////////////////HEADER////////////////////////////// */
 
 .header {
   background: var(--secondary);
@@ -98,7 +100,7 @@ body {
   color: var(--text-white);
 }
 
-/* MAIN */
+/* //////////////////////////////MAIN////////////////////////////// */
 
 main {
   display: flex;
@@ -108,7 +110,7 @@ main {
   width: 100%;
 }
 
-/* HERO */
+/* //////////////////////////////HERO////////////////////////////// */
 #hero {
   margin-top: 65px;
   padding: 70px 0;
@@ -220,4 +222,59 @@ main {
 
 .hero-card-price span {
   font-weight: var(--font-bold);
+}
+
+/* //////////////////////////////INFO////////////////////////////// */
+
+#info {
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+}
+
+#info h2 {
+  font-size: var(--font-md);
+  font-weight: var(--font-black);
+}
+
+.info-card {
+  text-align: center;
+  background: var(--secondary);
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  align-items: center;
+  gap: 20px;
+  border-radius: 15px;
+  padding: 40px 30px;
+  max-width: 300px;
+  height: 290px;
+  /* max-height: 300px; */
+}
+
+.info-cards-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.info-card img {
+  width: 50px;
+}
+
+.info-card h3 {
+  font-weight: var(--font-semibold);
+  font-size: var(--font-sd);
+}
+
+.info-card p {
+  font-weight: var(--font-light);
+  font-size: var(--font-sm);
+  color: var(--text-gray);
 }
