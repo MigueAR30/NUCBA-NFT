@@ -64,6 +64,7 @@ body {
   position: fixed;
   width: 100%;
   height: 65px;
+  scrollbar-width: 100px;
 }
 
 .navbar,
@@ -74,7 +75,7 @@ body {
 }
 
 .navbar {
-  gap: 5rem;
+  gap: 10rem;
 }
 
 .navbar-list {
@@ -111,6 +112,7 @@ main {
 }
 
 /* //////////////////////////////HERO////////////////////////////// */
+
 #hero {
   margin-top: 65px;
   padding: 70px 0;
@@ -278,3 +280,59 @@ main {
   font-size: var(--font-sm);
   color: var(--text-gray);
 }
+
+/* //////////////////////////////DISCOVER////////////////////////////// */
+
+#discover {
+  padding: 70px 0;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.discover-info {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.discover-info h2 {
+  font-size: var(--font-md);
+  font-weight: var(--font-black);
+  width: 45%;
+  /* align-content: flex-start; */
+}
+
+.discover-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 45%;
+}
+
+.discover-text p {
+  font-weight: var(--font-light);
+  color: var(--text-gray);
+}
+
+.discover-text a {
+  color: var(--text-white);
+  text-decoration: underline;
+  font-weight: var(--font-semibold);
+}
+
+.discover-cards {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 1200px;
+}
+
+.discover-cards img {
+  width: 30%;
+}
+
+/* //////////////////////////////PRODUCTS////////////////////////////// */
