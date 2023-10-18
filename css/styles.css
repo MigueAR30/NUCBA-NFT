@@ -56,7 +56,7 @@ body {
 /* /================================ HEADER ================================ */
 
 .header {
-  background: var(--secondary);
+  /* background: var(--secondary); */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -65,6 +65,9 @@ body {
   width: 100%;
   height: 65px;
   scrollbar-width: 100px;
+
+  /* agregado en la clase mediaqueries 1.11 */
+  background: linear-gradient(to bottom, #121e3c, var(--backgrounds));
 }
 
 .navbar,
@@ -135,9 +138,15 @@ main {
 .hero-info-h1 {
   font-size: var(--font-xl);
   font-weight: var(--font-black);
-  color: var(--text-white);
+  /* color: var(--text-white); */
   min-width: 500px;
   width: 80%;
+
+  /* agreado en la clase mediaqueries 1.11 */
+  background: linear-gradient(to top, #30cfd0, #c43ad6);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .hero-info p {
