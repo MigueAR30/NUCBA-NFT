@@ -305,6 +305,7 @@ main {
 .discover-info {
   display: flex;
   justify-content: center;
+  /* text-wrap: wrap; */
   gap: 10px;
 }
 
