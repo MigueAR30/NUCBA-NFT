@@ -300,12 +300,12 @@ main {
   justify-content: center;
   align-items: center;
   gap: 50px;
+  /* flex-wrap: wrap; */
 }
 
 .discover-info {
   display: flex;
   justify-content: center;
-  /* text-wrap: wrap; */
   gap: 10px;
 }
 
@@ -313,7 +313,6 @@ main {
   font-size: var(--font-md);
   font-weight: var(--font-black);
   width: 45%;
-  /* align-content: flex-start; */
 }
 
 .discover-text {
