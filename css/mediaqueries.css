@@ -72,7 +72,7 @@
   /* DISCOVER */
 
   #discover h2 {
-    width: 50vh;
+    width: 40vh;
   }
 
   .discover-info {
@@ -80,7 +80,7 @@
   }
 
   .discover-text {
-    width: 50vh;
+    width: 40vh;
     line-height: 30px;
     padding: 10px;
     gap: 50px;
