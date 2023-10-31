@@ -1,0 +1,243 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+
+.navbar-list li {
+  position: relative;
+}
+
+.navbar-list li a::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: var(--text-white);
+
+  bottom: 0;
+  left: 0;
+  position: absolute;
+
+  /* animacion empieza acá */
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.15s ease;
+}
+
+.navbar-list li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* CARRITO */
+
+.cart-icon {
+  transition: all 0.2s ease;
+}
+
+.cart-icon:hover {
+  color: var(--electric);
+}
+
+/* botones generales */
+
+.btn-add,
+.btn {
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-add:hover,
+.btn:hover {
+  background-color: var(--fire);
+  transform: translateY(-4px);
+}
+
+.btn-load {
+  transition: all.2s ease;
+}
+
+.btn-load:hover {
+  background-color: var(--electric);
+  scale: 1.07;
+}
+
+/* animaciones */
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-up {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes slide-right {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* animamos el h1 */
+
+.hero-info h1 {
+  -webkit-animation: fade 0.8s ease-in, slide-up 1.3s ease-in-out;
+  animation: fade 0.8s ease-in, slide-up 1.3s ease-in-out;
+}
+
+.hero-info p {
+  opacity: 0;
+  -webkit-animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+  animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+.hero-info a {
+  opacity: 0;
+  -webkit-animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+  animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+/* card */
+
+.hero-card {
+  opacity: 0;
+  -webkit-animation: fade 1s ease-in forwards, slide-right 1.2s ease-in-out;
+  animation: fade 1s ease-in forwards, slide-right 1.2s ease-in-out;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+#info h2 {
+  opacity: 0;
+  -webkit-animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+  animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+  -webkit-animation-delay: 0.55s;
+  animation-delay: 0.55s;
+}
+
+.info-card {
+  opacity: 0;
+  -webkit-animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+  animation: fade 0.8s ease-in forwards, slide-up 0.9s ease-in-out;
+}
+
+.info-card:nth-child(1) {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+.info-card:nth-child(2) {
+  -webkit-animation-delay: 0.55s;
+  animation-delay: 0.55s;
+}
+
+.info-card:nth-child(3) {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/* ANIMACION TYPEWRITER */
+
+.hero-info h1 span {
+  position: relative;
+  background: linear-gradient(to top, #30cfd0, #c43ad6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero-info h1 span::before,
+.hero-info h1 span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.hero-info h1 span::before {
+  /* background: red; */
+  background: var(--backgrounds);
+  -webkit-animation: typewriter 1.2s 1.4s steps(6) forwards;
+  animation: typewriter 1.2s 1.4s steps(6) forwards;
+}
+
+.hero-info h1 span::after {
+  width: 0.15rem;
+  background: linear-gradient(to top, #30cfd0, #c43ad6);
+  -webkit-animation: typewriter 1.2s 1.4s steps(6) forwards,
+    blink 0.8s steps(6) infinite;
+  animation: typewriter 1.2s 1.4s steps(6) forwards,
+    blink 0.8s steps(6) infinite;
+}
+
+@-webkit-keyframes blink {
+  to {
+    opacity: 0;
+    background-color: transparent;
+  }
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+    background-color: transparent;
+  }
+}
+
+@-webkit-keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}

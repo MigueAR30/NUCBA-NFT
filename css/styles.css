@@ -66,7 +66,7 @@ body {
   height: 65px;
   scrollbar-width: 100px;
 
-  /* agregado en la clase mediaqueries 1.11 */
+  /*agregado en la clase mediaqueries 1.11 */
   background: linear-gradient(to bottom, #121e3c, var(--backgrounds));
 }
 
